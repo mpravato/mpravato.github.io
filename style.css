@@ -1,4 +1,215 @@
-h1 {
-  font-size: 36px;
-  color: #33485e;
+/*font-family: 'Catamaran', sans-serif;
+ font-family: 'Montserrat', sans-serif;
+*/
+/*------ALL PAGES-----*/
+ .resume, .home, .about, .work {
+     margin: 0 auto;
+     width: 950px;
+}
+ .header {
+     font-family: 'Catamaran', sans-serif;
+}
+ .header ul {
+     list-style-type: none;
+     margin: 0 auto;
+}
+ .header li {
+     display: inline-block;
+     padding: 10px;
+     margin-right: 10px;
+     font-size: 30px;
+     background-color: #8BC0F0;
+}
+ .header a {
+     color: white;
+     text-decoration: none;
+     border-style: ridge;
+     padding-left: 3px;
+     padding-right: 3px;
+}
+ .header a:hover {
+     border-style: inset;
+}
+/*----HOME-----*/
+ .intro, #words {
+     font-size: 20px;
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+}
+ #words {
+     text-transform: uppercase;
+     border-top: 3px dotted gray;
+     padding-top: 6px;
+}
+ .one, .two, .three, .four, .five {
+     width: 70px;
+     height: 50px;
+     color: white;
+}
+ .one {
+     background-color: #274057;
+}
+ .two {
+     background-color: #8BC0F0;
+}
+ .three {
+     background-color:#609DD6;
+}
+ .four {
+     background-color: #0B3761;
+}
+ .five {
+     background-color: #4C7CA8;
+}
+/*----ABOUT----*/
+ #about {
+     text-align: left;
+     padding-left: 8px;
+     float: left;
+}
+ #deck {
+     color: white;
+     font-size: 20px;
+     font-family: 'Catamaran', sans-serif;
+     font-style: italic;
+     text-align: left;
+     float: left;
+     letter-spacing: 3px;
+     background-color: #0B3761;
+     opacity: 40%;
+}
+ .aboutr {
+     width: 60%;
+     float: right;
+}
+ #morg {
+     width: 35%;
+     margin-right: 0px;
+}
+/*----RESUME----*/
+ h1 {
+     font-size: 30px;
+     font-family: 'Catamaran', sans-serif;
+     color: white;
+     background-color: #0B3761;
+     opacity: 60%;
+     text-align: center;
+     letter-spacing: 3px;
+     margin: 0 auto;
+     width: 70%;
+     margin-bottom: 10px;
+}
+ .social ul {
+     list-style-type: none;
+     padding-left: 0;
+}
+ .social li {
+     display: inline-block;
+}
+ .social ul li::after{
+     content: "|";
+     padding: 6px;
+}
+ .social ul li:last-child::after {
+     content: "";
+}
+ .social {
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+     margin-bottom: 0;
+}
+ .social a {
+     text-decoration: none;
+     color: black;
+}
+ .teach {
+     width: 44%;
+}
+ .pic {
+     width: 49%
+}
+ .right {
+     width: 55%;
+     float: right;
+     border-left: 2px solid #0B3761;
+     padding-left: 7px;
+}
+ h2 {
+     font-size: 25px;
+     color: #4C7CA8;
+     font-family: 'Catamaran', sans-serif;
+     letter-spacing: 2px;
+     margin-bottom: 1px;
+}
+ h3, h4, h5 {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 15px;
+     margin-top: 2px;
+     margin-bottom: 2px;
+}
+ h4 {
+     font-style: italic;
+}
+ h5 {
+     font-weight: normal;
+}
+ p {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 13px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+ .left {
+     width: 45%;
+     margin-bottom: 1px;
+     margin-top: 1px;
+     margin-right: 5px;
+}
+ .ed {
+     margin-top: 5px;
+     margin-right: 5px;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 14px;
+}
+ .grad {
+     font-size: 15px;
+     margin-top: 1px;
+}
+ .skills {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 14px;
+     margin-top: 1px;
+}
+/*----Work---*/
+ .worktitle {
+     font-size: 30px;
+     font-family: 'Catamaran', sans-serif;
+     color: white;
+     background-color: #0B3761;
+     opacity: 60;
+     letter-spacing: 3px;
+     float: left;
+     text-align: left;
+     margin: 0 auto;
+     width: 45%;
+     padding-left: 5px;
+}
+ #dbk {
+     margin-top: 20px;
+}
+ .links {
+     font-size: 16px;
+     font-family: 'Montserrat', sans-serif;
+}
+ .links a {
+     color: black;
+     text-decoration: none;
+     list-style-type: disc;
+}
+ .links p {
+     font-size: 16px;
+}
+ .links a:hover {
+     text-decoration: underline;
+     font-style: italic;
 }
