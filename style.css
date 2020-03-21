@@ -1,215 +1,394 @@
-/*font-family: 'Catamaran', sans-serif;
- font-family: 'Montserrat', sans-serif;
+/*font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Slab', serif;
 */
+
 /*------ALL PAGES-----*/
- .resume, .home, .about, .work {
+.resume, .home, .about, .work, .header, .footer {
      margin: 0 auto;
-     width: 950px;
+     width: 980px;
 }
- .header {
-     font-family: 'Catamaran', sans-serif;
+
+.header {
+    font-family: 'Roboto Condensed', sans-serif;
 }
- .header ul {
+
+.header h1 {
+    color: #274057;
+    background-color: white;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header p {
+   font-family: 'Roboto Slab', serif;
+   font-size: 20px;
+   color: #274057;
+   font-weight: 400;
+   letter-spacing: 10px;
+   text-align: center;
+   margin: 0 auto;
+   margin-bottom: 10px;
+}
+
+.header ul {
      list-style-type: none;
+     background-color: #4C7CA8;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     padding-top: 3px;
+     padding-bottom: 3px;
      margin: 0 auto;
+     margin-bottom: 10px;
 }
- .header li {
-     display: inline-block;
+.header li {
      padding: 10px;
-     margin-right: 10px;
      font-size: 30px;
-     background-color: #8BC0F0;
 }
- .header a {
+.header a {
      color: white;
      text-decoration: none;
      border-style: ridge;
-     padding-left: 3px;
-     padding-right: 3px;
+     padding-left: 4px;
+     padding-right: 4px;
 }
- .header a:hover {
+.header a:hover {
      border-style: inset;
 }
+
+
+.footer {
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  color: white;
+  background-color: #4C7CA8;
+  padding-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+
+
 /*----HOME-----*/
- .intro, #words {
-     font-size: 20px;
-     text-align: center;
-     font-family: 'Montserrat', sans-serif;
+.banner {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 700px;
+  min-width: 980px;
+  margin-bottom: 30px;
 }
- #words {
-     text-transform: uppercase;
-     border-top: 3px dotted gray;
-     padding-top: 6px;
+
+.home h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 25px;
+  color: #0B3761;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-weight: normal;
 }
- .one, .two, .three, .four, .five {
-     width: 70px;
-     height: 50px;
-     color: white;
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
- .one {
-     background-color: #274057;
+.intro.text {
+  font-size: 16px;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 60%;
+  margin-right: 5px;
+  }
+#face {
+  max-width: 45%;
+  max-height: 500px;
+  margin-left: 5px;
+  }
+
+
+.intro, #social {
+  font-family: 'Roboto Slab', serif;
+  }
+#social {
+  font-size: 25px;
+  letter-spacing: 7px;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
- .two {
-     background-color: #8BC0F0;
-}
- .three {
-     background-color:#609DD6;
-}
- .four {
-     background-color: #0B3761;
-}
- .five {
-     background-color: #4C7CA8;
-}
+
+/*CSS for links down with "work samples"*/
+
+
+
 /*----ABOUT----*/
- #about {
-     text-align: left;
-     padding-left: 8px;
-     float: left;
+.about.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 770px;
 }
- #deck {
-     color: white;
-     font-size: 20px;
-     font-family: 'Catamaran', sans-serif;
-     font-style: italic;
-     text-align: left;
-     float: left;
-     letter-spacing: 3px;
-     background-color: #0B3761;
-     opacity: 40%;
+.about.header.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
- .aboutr {
-     width: 60%;
-     float: right;
+.about.header.column h2 {
+  font-size: 45px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 3px;
 }
- #morg {
-     width: 35%;
-     margin-right: 0px;
+.about.header.column p {
+   font-size: 25px;
+   letter-spacing: normal;
+   color: black;
+   margin-bottom: 1px;
 }
+.about.header.column p, h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 0px;
+}
+#aboutface {
+  max-width: 53%;
+  max-height: 270px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 15px;
+}
+
+
+blockquote {
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 40px;
+  border-left: 5px solid #609DD6;
+  padding-left: 6px;
+}
+
+.about p, blockquote {
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+.teaching {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#teach1, #teach2, #teach3 {
+  max-width: 33%;
+  max-height: 300px;
+}
+
+
+
 /*----RESUME----*/
- h1 {
+ .rsocial, #business {
+     text-align: center;
+     font-family: 'Roboto Condensed', sans-serif;
+     font-size: 20px;
+     margin-bottom: 0px;
+}
+#business {
+  font-size: 27px;
+  margin-top: 2px;
+  font-weight: normal;
+}
+
+
+.rsocial ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 5px;
+}
+.rsocial li {
+    display: inline-block;
+}
+.rsocial ul li::after{
+    content: "|";
+    padding: 6px;
+}
+.rsocial ul li:last-child::after {
+    content: "";
+}
+
+
+.resume.pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#shooting, #teach {
+    width: 49%;
+}
+
+.experience {
+  margin-left: 10px;
+}
+
+.resume h2, .work h3 {
      font-size: 30px;
-     font-family: 'Catamaran', sans-serif;
+     background-color: #274057;
      color: white;
-     background-color: #0B3761;
-     opacity: 60%;
-     text-align: center;
-     letter-spacing: 3px;
-     margin: 0 auto;
-     width: 70%;
-     margin-bottom: 10px;
-}
- .social ul {
-     list-style-type: none;
-     padding-left: 0;
-}
- .social li {
-     display: inline-block;
-}
- .social ul li::after{
-     content: "|";
-     padding: 6px;
-}
- .social ul li:last-child::after {
-     content: "";
-}
- .social {
-     text-align: center;
-     font-family: 'Montserrat', sans-serif;
-     margin-bottom: 0;
-}
- .social a {
-     text-decoration: none;
-     color: black;
-}
- .teach {
-     width: 44%;
-}
- .pic {
-     width: 49%
-}
- .right {
-     width: 55%;
-     float: right;
-     border-left: 2px solid #0B3761;
-     padding-left: 7px;
-}
- h2 {
-     font-size: 25px;
-     color: #4C7CA8;
-     font-family: 'Catamaran', sans-serif;
+     font-weight: normal;
      letter-spacing: 2px;
      margin-bottom: 1px;
-}
- h3, h4, h5 {
-     font-family: 'Montserrat', sans-serif;
-     font-size: 15px;
-     margin-top: 2px;
-     margin-bottom: 2px;
-}
- h4 {
-     font-style: italic;
-}
- h5 {
-     font-weight: normal;
-}
- p {
-     font-family: 'Montserrat', sans-serif;
-     font-size: 13px;
      margin-top: 10px;
-     margin-bottom: 10px;
+     padding-left: 4px;
+     padding: 4px;
 }
- .left {
-     width: 45%;
-     margin-bottom: 1px;
-     margin-top: 1px;
-     margin-right: 5px;
+.resume h2, h3, h4, h5, .work h3 {
+    font-family: 'Roboto Condensed', sans-serif;
 }
- .ed {
-     margin-top: 5px;
-     margin-right: 5px;
-     font-family: 'Montserrat', sans-serif;
-     font-size: 14px;
+.resume h3 {
+    font-size: 23px;
+    margin-bottom: 2px;
+    margin-top: 3px;
 }
- .grad {
+.resume h4, h5 {
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: 400;
+}
+
+
+.credits li {
+     font-family: 'Roboto Slab', serif;
+     font-weight: lighter;
      font-size: 15px;
-     margin-top: 1px;
+     list-style-type: square;
 }
- .skills {
-     font-family: 'Montserrat', sans-serif;
-     font-size: 14px;
-     margin-top: 1px;
+.credits ul {
+    margin-top: 8px;
+    margin-bottom: 20px;
 }
+
+
+.ed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+.ed.text {
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+  margin-right: 0px;
+}
+.ed.pic {
+  max-width: 50%;
+  margin-left: 0px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+
+
 /*----Work---*/
- .worktitle {
-     font-size: 30px;
-     font-family: 'Catamaran', sans-serif;
-     color: white;
-     background-color: #0B3761;
-     opacity: 60;
-     letter-spacing: 3px;
-     float: left;
-     text-align: left;
-     margin: 0 auto;
-     width: 45%;
-     padding-left: 5px;
+.work h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 1px;
 }
- #dbk {
-     margin-top: 20px;
+#fridge {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5px;
 }
- .links {
+
+
+/*h3 CSS in Resume*/
+.work h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.links {
      font-size: 16px;
-     font-family: 'Montserrat', sans-serif;
+     font-family: 'Roboto Slab', serif;
+     font-weight: lighter;
 }
- .links a {
+.links ul {
+  margin-top: 10px;
+  list-style-type: square;
+}
+.links p {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+ .links a, .intro a, .rsocial a, #social a {
      color: black;
      text-decoration: none;
      list-style-type: disc;
 }
- .links p {
-     font-size: 16px;
-}
- .links a:hover {
+
+ .links a:hover, .intro a:hover, .rsocial a:hover, #social a:hover {
      text-decoration: underline;
      font-style: italic;
+}
+
+#social a:after {
+  content: "|";
+  padding: 6px;
+}
+#social a:last-child::after {
+  content: "";
+}
+
+/*Colors*/
+
+.one, .two, .three, .four, .five {
+    width: 70px;
+    height: 50px;
+    color: white;
+}
+
+.color.scheme {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.one {
+    background-color: #274057;
+}
+.two {
+    background-color: #8BC0F0;
+}
+.three {
+    background-color:#609DD6;
+}
+.four {
+    background-color: #0B3761;
+}
+.five {
+    background-color: #4C7CA8;
 }
