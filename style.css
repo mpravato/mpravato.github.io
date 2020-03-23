@@ -143,9 +143,7 @@ font-family: 'Roboto Slab', serif;
 .hsocial {
 	letter-spacing: 7px;
 	font-weight: lighter;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	text-align: center;
 	margin-top: 20px;
 }
 
@@ -313,10 +311,9 @@ blockquote, .about p {
 	margin-right: 0px;
 }
 
-.ed.pic {
+#edpic {
 	max-width: 50%;
   max-height: 350px;
-	margin-left: 0px;
 	margin-top: 3px;
 	margin-bottom: 3px;
 }
@@ -338,7 +335,6 @@ blockquote, .about p {
 	margin-top: 5px;
 }
 
-
 /*Some h2, h3, h4 CSS details in Resume*/
 
 .work h4 {
@@ -346,6 +342,7 @@ blockquote, .about p {
 	font-weight: 400;
 	margin-left: 10px;
 	margin-bottom: 0px;
+	margin-top: 5px;
 }
 
 .links {
