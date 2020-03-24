@@ -12,7 +12,7 @@ font-family: 'Roboto Slab', serif;
 
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 750px) {
 /*------ALL PAGES-----*/
 
 .header, .home, .about, .resume, .work, .footer {
@@ -95,11 +95,11 @@ font-family: 'Roboto Slab', serif;
 /*-----HOME------*/
 #banner {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	max-height: 700px;
-	min-width: 100%;
+  flex-flow: row wrap;
+	flex-grow: 1;
+	align-items: stretch;
 	margin-bottom: 30px;
+	max-width: 100%;
 	}
 
 .home h2 {
@@ -404,11 +404,11 @@ blockquote, .about p {
 
 /*-------------------------------------Responsive Design for Phones-------------------------------------*/
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
 /*------ALL PAGES------*/
 .header, .home, .about, .resume, .work, .footer {
 	margin: 0 auto;
-	width: 668px;
+	max-width: 90%;
 	}
 
 .header {
@@ -487,11 +487,11 @@ blockquote, .about p {
 /*------HOME------*/
 #banner {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	max-height: 500px;
-	min-width: 100%;
+	flex-flow: row wrap;
+	flex-grow: 1;
+	align-items: stretch;
 	margin-bottom: 30px;
+	max-width: 100%;
 	}
 
 .home h2 {
@@ -524,7 +524,7 @@ blockquote, .about p {
 	flex-direction: column;
 	justify-content: center;
 	max-width: 65%;
-	margin-right: 5px;
+	margin-right: 10px;
 	}
 
 #face {
