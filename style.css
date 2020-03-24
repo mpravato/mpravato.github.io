@@ -53,7 +53,6 @@ font-family: 'Roboto Slab', serif;
 	justify-content: space-around;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	margin: 0 auto;
 	margin-bottom: 10px;
 }
 
@@ -92,7 +91,7 @@ font-family: 'Roboto Slab', serif;
 
 
 /*----HOME-----*/
-.banner {
+#banner {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -154,7 +153,7 @@ font-family: 'Roboto Slab', serif;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 770px;
+	max-width: 78%;
 }
 
 .about.header.column {
@@ -186,8 +185,6 @@ font-family: 'Roboto Slab', serif;
 #aboutface {
 	max-width: 53%;
 	max-height: 270px;
-	margin-top: 0px;
-	margin-right: 0px;
 	margin-left: 15px;
 }
 
@@ -219,21 +216,6 @@ blockquote, .about p {
 	max-width: 33%;
 	max-height: 300px;
 }
-
-@media only screen and (max-width: 680px) {
-	.teaching {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	#teach1, #teach2, #teach2 {
-		min-width: 100%;
-		max-height: 600px;
-	}
-}
-
-
 
 /*----RESUME----*/
 .rsocial, #business {
@@ -333,7 +315,7 @@ blockquote, .about p {
 
 
 
-/*----Work---*/
+/*----WORK---*/
 .work h2 {
 	font-weight: normal;
 	font-size: 30px;
@@ -404,4 +386,94 @@ blockquote, .about p {
 
 .hsocial ul li:last-child::after, .rsocial ul li:last-child::after {
 	content: "";
+}
+
+
+
+/*Responsive Design for Phones*/
+
+@media only screen and (max-width: 680px) {
+/*-----ALL PAGES-----*/
+.header, .home, .about, .resume, .work, .footer {
+	margin: 0 auto;
+	width: 668px;
+	}
+
+.header ul {
+	list-style-type: none;
+	background-color: #4C7CA8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+	}
+
+.header li {
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+	}
+
+
+
+/*-----HOME-----*/
+#banner {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	max-height: 500px;
+	margin-bottom: 30px;
+	}
+
+
+
+/*----ABOUT ME----*/
+.about.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 78%;
+	}
+
+#aboutface {
+	margin-right: 15px;
+	}
+
+.teaching {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: center;
+	}
+#teach1, #teach2, #teach3 {
+	min-width: 75%;
+	max-height: 400px;
+	margin-bottom: 20px;
+	float: center;
+	}
+
+
+
+/*-----RESUME------*/
+.resume.pics {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: center;
+	margin-bottom: 20px;
+}
+
+#shooting, #teach {
+	min-width: 85%;
+	max-height: 400px;
+	margin-bottom: 10px;
+}
+
+#edpic {
+	max-width: 55%;
+  max-height: 400px;
+	align-self: center;
+	}
 }
