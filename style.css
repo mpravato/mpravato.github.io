@@ -78,15 +78,14 @@ font-family: 'Roboto', serif;
 	}
 
 .footer {
-	font-family: 'Lato,' sans-serif;
+	padding-left: 5px;
+	margin-top: 10px;
+}
+
+.footer p {
+	font-family: 'Lato', sans-serif;
 	font-size: 15px;
 	color: #274057;
-	line-height: 10px;
-	padding-left: 5px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	margin-top: 50px;
-	margin-bottom: 5px;
 	}
 
 
@@ -141,18 +140,18 @@ font-family: 'Roboto', serif;
 	font-size: 15px;
 	}
 
-.home a {
+.home a, .rsocial a {
 	color: black;
 	text-decoration: none;
 	}
 
-.home a:hover {
+.home a:hover, .rsocial a:hover {
 	font-weight: bold;
 	letter-spacing: 7px;
 	padding-left: 5px;
 	}
 
-.hsocial {
+.hsocial, .rsocial {
 	font-family: 'Roboto', serif;
 	font-size: 25px;
 	letter-spacing: 7px;
@@ -160,7 +159,7 @@ font-family: 'Roboto', serif;
 	text-align: center;
 	}
 
-.hsocial ul {
+.hsocial ul, .rsocial ul {
 	color: black;
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -171,118 +170,45 @@ font-family: 'Roboto', serif;
 	justify-content: center;
 	}
 
-.hsocial li {
+.hsocial li, .rsocial li {
 	padding-right: 10px;
 	padding-left: 10px;
 }
 
 /*Link CSS Below*/
 
-
-
-/*------ABOUT------*/
-.about.header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	max-width: 78%;
-	}
-
-.about.header.column {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	}
-
-.about.header.column h2 {
-	font-size: 45px;
-	letter-spacing: 3px;
-	font-weight: normal;
-	text-align: center;
-	margin-bottom: 3px;
-	}
-
-.about.header.column p {
-	font-size: 25px;
-	letter-spacing: normal;
-	color: black;
-	margin-bottom: 1px;
-	}
-
-.about.header.column h2, .about.header.column p {
-	font-family: 'Roboto Condensed', sans-serif;
-	margin-top: 0px;
-	}
-
-#aboutface {
-	max-width: 60%;
-	max-height: 270px;
-	margin-left: 15px;
-	}
-
-blockquote {
-	font-size: 18px;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	margin-left: 40px;
-	border-left: 5px solid #609DD6;
-	padding-left: 6px;
-	}
-
-blockquote, .about p {
-	font-family: 'Roboto Slab', serif;
-	font-weight: lighter;
-	}
-
-.about p {
-  font-size: 15px;
-	}
-
-.teaching {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	}
-
-#teach1, #teach2, #teach3 {
-	max-width: 33%;
-	max-height: 300px;
-	}
-
 /*------RESUME------*/
-.rsocial, #business {
-	text-align: center;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 20px;
-	margin-bottom: 0px;
-	}
 
 #business {
-	font-size: 27px;
-	margin-top: 2px;
-	font-weight: normal;
+	font-family: 'Lato', sans-serif;
+	font-size: 35px;
+	color: #274057;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.rsocial {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 15px;
 	}
 
-/*Links CSS is below*/
+/*Links CSS above*/
 
 .resume.pics {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin-bottom: 20px;
 	}
 
 #shooting, #perform {
-	max-width: 64%;
-  max-height: 500px;
-	}
-
-#shooting {
-	margin-right: 8px;
-	}
-
-#perform {
-	margin-left: 8px;
+	max-width: 50%;
+  max-height: 550px;
 	}
 
 .experience {
@@ -399,37 +325,16 @@ blockquote, .about p {
 
 
 /*------Links Throughout Site------*/
-.rsocial a, .links a {
+.links a {
 	color: black;
 	text-decoration: none;
 	list-style-type: disc;
 	}
 
-.rsocial a:hover, .links a:hover {
+.links a:hover {
 	text-decoration: underline;
 	font-style: italic;
 	}
-
-.rsocial ul {
-	list-style-type: none;
-	padding-left: 0;
-	margin-top: 5px;
-	}
-
-.rsocial li {
-	display: inline-block;
-	}
-
-.rsocial ul li::after {
-	content: "|";
-
-	}
-
-.rsocial ul li:last-child::after {
-	content: "";
-	}
-}
-
 
 /*-------------------------------------Responsive Design for Phones-------------------------------------*/
 
@@ -803,11 +708,11 @@ blockquote, .about p {
 	display: inline-block;
 	}
 
-.hsocial ul li::after, .rsocial ul li::after {
+.hsocial ul li::after {
 	content: "|";
 	}
 
-.hsocial ul li:last-child::after, .rsocial ul li:last-child::after {
+.hsocial ul li:last-child::after {
 	content: "";
 	}
 }
