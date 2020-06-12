@@ -1,5 +1,6 @@
-/*font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Roboto Slab', serif;
+/*font-family: 'Allura', cursive;
+  font-family: 'Lato', sans-serif;
+font-family: 'Roboto', serif;
 */
 
 /*Color Scheme:
@@ -17,139 +18,163 @@ font-family: 'Roboto Slab', serif;
 
 .header, .home, .about, .resume, .work, .footer {
 	margin: 0 auto;
-	max-width: 77%;
+	max-width: 90%;
 	}
 
 .header {
-	font-family: 'Roboto Condensed', sans-serif;
+	color: #274057;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 0px;
 	}
 
 .header h1 {
-	color: #274057;
-	background-color: white;
-	font-size: 50px;
-	font-weight: 500;
-	text-align: center;
-	letter-spacing: 5px;
-	margin: 0 auto;
+	font-family: 'Allura';
+	font-size: 100px;
+	font-weight: 300;
+	margin-left: 0px;
 	margin-top: 10px;
-	margin-bottom: 10px;
-	}
-
-.header p {
-	font-size: 20px;
-	color: #274057;
-	font-weight: 400;
-	letter-spacing: 10px;
-	text-align: center;
-	margin: 0 auto;
 	margin-bottom: 10px;
 	}
 
 .header ul {
 	list-style-type: none;
-	background-color: #4C7CA8;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	margin-bottom: 10px;
+	justify-content: space-evenly;
+	margin-right: 0px;
+	margin-top: 47px;
 	}
 
 .header li {
+	font-family: 'Lato', sans-serif;
+	font-size: 23px;
+	font-weight: 400;
+	letter-spacing: 3px;
 	padding: 10px;
-	font-size: 30px;
 	}
 
+.header ul li:last-child {
+	margin-right: 0px;
+}
+
 .header a {
-	color: white;
+	color: #274057;
 	text-decoration: none;
-	border-style: ridge;
-	padding-left: 4px;
-	padding-right: 4px;
+	padding-right: 10px;
+	padding-bottom: 5px;
 	}
 
 .header a:hover {
-	border-style: inset;
+	border-right: solid;
+	border-right-color: black;
+	border-bottom: solid;
+	border-bottom-color: black;
 	}
 
-.header p, .footer {
-	font-family: 'Roboto Slab', serif;
+.header a:visited {
+	color: #274057;
 	}
 
 .footer {
-	font-size: 14px;
-	color: white;
-	background-color: #4C7CA8;
+	font-family: 'Lato,' sans-serif;
+	font-size: 15px;
+	color: #274057;
+	line-height: 10px;
 	padding-left: 5px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	margin-top: 20px;
+	margin-top: 50px;
 	margin-bottom: 5px;
 	}
 
 
-
 /*-----HOME------*/
-.banner {
-	display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  align-items: stretch;
-	}
 
 #banner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: row wrap;
 	flex-grow: 1;
-	margin-bottom: 30px;
 	max-width: 100%;
-	max-height: 750px;
 	}
 
-.home h2 {
-	font-family: 'Roboto Condensed', sans-serif;
-	color: #0B3761;
-	letter-spacing: 5px;
-	text-align: center;
-	margin-bottom: 30px;
+.home h2, h3 {
+	font-family: 'Lato', sans-serif;
+	color: #274057;
 	font-weight: normal;
 	}
 
-.home h2, .hsocial {
+.home h2 {
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-top: 45px;
+	margin-left: 50px;
+	padding-left: 15px;
+	border-left: solid;
+	border-left-color: #cddadc;
+	border-left-width: 7px;
+	}
+
+.home.text {
+	max-width: 92.5%;
+}
+
+.home h3 {
+	margin-top: 0px;
+	margin-bottom: 10px;
 	font-size: 25px;
+	text-align: center;
 	}
 
-.intro {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	}
-
-.intro, .hsocial {
-	font-family: 'Roboto Slab', serif;
-	}
-
-.intro.text {
-	font-size: 16px;
+.home p {
+	font-family: 'Roboto', serif;
+	color: black;
+	font-size: 20px;
+	line-height: 30px;
 	font-weight: lighter;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	max-width: 65%;
-	margin-right: 5px;
 	}
 
-#face {
-	max-width: 50%;
-	max-height: 500px;
+#thoughts {
+	font-size: 15px;
+	}
+
+.home a {
+	color: black;
+	text-decoration: none;
+	}
+
+.home a:hover {
+	font-weight: bold;
+	letter-spacing: 7px;
+	padding-left: 5px;
 	}
 
 .hsocial {
+	font-family: 'Roboto', serif;
+	font-size: 25px;
 	letter-spacing: 7px;
 	font-weight: lighter;
 	text-align: center;
-	margin-top: 20px;
 	}
+
+.hsocial ul {
+	color: black;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	list-style-type: none;
+	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	}
+
+.hsocial li {
+	padding-right: 10px;
+	padding-left: 10px;
+}
 
 /*Link CSS Below*/
 
@@ -374,33 +399,33 @@ blockquote, .about p {
 
 
 /*------Links Throughout Site------*/
-.intro a, .hsocial a, .rsocial a, .links a {
+.rsocial a, .links a {
 	color: black;
 	text-decoration: none;
 	list-style-type: disc;
 	}
 
-.intro a:hover, .hsocial a:hover, .rsocial a:hover, .links a:hover {
+.rsocial a:hover, .links a:hover {
 	text-decoration: underline;
 	font-style: italic;
 	}
 
-.hsocial ul, .rsocial ul {
+.rsocial ul {
 	list-style-type: none;
 	padding-left: 0;
 	margin-top: 5px;
 	}
 
-.hsocial li, .rsocial li {
+.rsocial li {
 	display: inline-block;
 	}
 
-.hsocial ul li::after, .rsocial ul li::after {
+.rsocial ul li::after {
 	content: "|";
-	padding: 6px;
+
 	}
 
-.hsocial ul li:last-child::after, .rsocial ul li:last-child::after {
+.rsocial ul li:last-child::after {
 	content: "";
 	}
 }
@@ -780,7 +805,6 @@ blockquote, .about p {
 
 .hsocial ul li::after, .rsocial ul li::after {
 	content: "|";
-	padding: 6px;
 	}
 
 .hsocial ul li:last-child::after, .rsocial ul li:last-child::after {
