@@ -185,7 +185,11 @@ font-family: 'Roboto', serif;
 
 /*------RESUME------*/
 
-#business {
+.resume {
+	max-width: 92.5%;
+}
+
+#business, #whathaveIdone {
 	font-family: 'Lato', sans-serif;
 	font-size: 35px;
 	color: #274057;
@@ -195,7 +199,7 @@ font-family: 'Roboto', serif;
 	margin-bottom: 0px;
 	}
 
-.rsocial {
+.rsocial, #ref {
 	text-align: center;
 	font-family: 'Roboto', serif;
 	font-size: 20px;
@@ -229,15 +233,16 @@ font-family: 'Roboto', serif;
 	letter-spacing: 2px;
 	margin-bottom: 1px;
 	margin-top: 10px;
-	padding-left: 6px;
-	padding: 4px;
+	padding-left: 8px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 	}
 
-.resume h2, .resume h3, .resume h4, .resume h5, .work h2, .work h3, .work h4, #fridge {
+.resume h2, .resume h3, .resume h4, .resume h5, .work h3, .work h4, #fridge {
 	font-family: 'Roboto', serif;
 	}
 
-.resume h3 {
+.resume h3, .work h4 {
 	font-size: 23px;
 	margin-top: 5px;
 	}
@@ -245,6 +250,7 @@ font-family: 'Roboto', serif;
 .resume h3, .resume h4, .resume h5 {
   margin-bottom: 2px;
 	}
+
 .resume h4, .resume h5 {
 	font-size: 18px;
 	margin-top: 2px;
@@ -275,11 +281,14 @@ font-family: 'Roboto', serif;
 .ed.text {
 	display: flex;
 	flex-direction: column;
-  align-items: center;
-	align-items: flex-start;
+  flex-grow: 1;
 	max-width: 45%;
 	margin-right: 0px;
 	margin-top: 0px;
+	margin-bottom: 0px;
+	}
+
+.ed.text h3 {
 	margin-bottom: 0px;
 	}
 
@@ -295,20 +304,39 @@ font-family: 'Roboto', serif;
 	margin-top: 5px;
 	}
 
+.download a {
+	background-color: #274057;
+	color: white;
+	font-size: 30px;
+	font-family: 'Roboto', serif;
+	font-weight: normal;
+	text-decoration: none;
+	border-radius: 25px;
+	padding: 17px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 500px;
+	margin-right: 500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	}
+
+
 
 /*------WORK-----*/
-.work h2 {
-	font-weight: normal;
-	font-size: 30px;
-	text-align: center;
-	margin-bottom: 1px;
-  margin-top: 2px;
+
+.work {
+	max-width: 85%;
 	}
 
 #fridge {
-	font-size: 18px;
 	text-align: center;
-	margin-top: 5px;
+	font-family: 'Roboto', serif;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: lighter;
 	}
 
 /*Some h2, h3, h4 CSS details in Resume*/
@@ -316,39 +344,62 @@ font-family: 'Roboto', serif;
 .work h4 {
 	font-size: 20px;
 	font-weight: 400;
-	margin-left: 10px;
+	margin-left: 20px;
 	margin-bottom: 0px;
 	margin-top: 5px;
 	}
 
-.links {
-	font-size: 16px;
-	font-family: 'Roboto Slab', serif;
-	font-weight: lighter;
-	}
-
 .links ul {
-	margin-top: 10px;
+	margin-top: 5px;
+	margin-left: 15px;
 	list-style-type: square;
 	}
 
-.links p {
-	font-size: 16px;
-	margin-left: 10px;
+.links li {
+	margin-bottom: 5px;
 	}
 
-
-/*------Links Throughout Site------*/
 .links a {
-	color: black;
 	text-decoration: none;
 	list-style-type: disc;
+	color: black;
+	font-size: 17px;
+	font-family: 'Roboto', serif;
+	font-weight: lighter;
 	}
 
 .links a:hover {
 	text-decoration: underline;
 	font-style: italic;
 	}
+
+.more a {
+	color: white;
+	text-decoration: none;
+	font-style: normal;
+	background-color: #274057;
+	font-size: 30px;
+	font-family: 'Roboto', serif;
+	font-weight: normal;
+	border-radius: 25px;
+	padding: 17px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 500px;
+	margin-right: 500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	}
+
+.more a:hover {
+	text-decoration: none;
+	font-style: normal;
+	}
+
+
+/*------Links Throughout Site------*/
+
 
 /*-------------------------------------Responsive Design for Phones-------------------------------------*/
 
@@ -493,79 +544,6 @@ font-family: 'Roboto', serif;
 	}
 
 
-/*------ABOUT ME------*/
-.about.header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 78%;
-	}
-
-.about.header.column {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	}
-
-.about.header.column h2 {
-	font-size: 45px;
-	letter-spacing: 3px;
-	font-weight: normal;
-	text-align: center;
-	margin-bottom: 3px;
-	}
-
-.about.header.column p {
-	font-size: 25px;
-	letter-spacing: normal;
-	color: black;
-	margin-bottom: 1px;
-	}
-
-.about.header.column h2, .about.header.column p {
-	font-family: 'Roboto Condensed', sans-serif;
-	margin-top: 0px;
-	}
-
-#aboutface {
-	max-width: 45%;
-	max-height: 250px;
-	margin-right: 15px;
-	}
-
-blockquote {
-	font-size: 18px;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	margin-left: 40px;
-	border-left: 5px solid #609DD6;
-	padding-left: 6px;
-	}
-
-blockquote, .about p {
-	font-family: 'Roboto Slab', serif;
-	font-weight: lighter;
-	}
-
-.about p {
-  font-size: 15px;
-	}
-
-.teaching {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-content: center;
-	}
-#teach1, #teach2, #teach3 {
-	min-width: 75%;
-	max-height: 400px;
-	margin-bottom: 20px;
-	float: center;
-	}
-
-
-
 /*------RESUME------*/
 .rsocial, #business {
 	text-align: center;
@@ -610,7 +588,7 @@ blockquote, .about p {
 	padding: 4px;
 	}
 
-.resume h2, .resume h3, .resume h4, .resume h5, .work h2, .work h3, .work h4, #fridge {
+.resume h2, .resume h3, .resume h4, .resume h5, .work h3, .work h4, #fridge {
 	font-family: 'Roboto Condensed', sans-serif;
 	}
 
@@ -661,14 +639,9 @@ blockquote, .about p {
 	align-self: center;
 	}
 
+
+
 /*------WORK-----*/
-.work h2 {
-	font-weight: normal;
-	font-size: 30px;
-	text-align: center;
-	margin-bottom: 1px;
- 	margin-top: 2px;
-	}
 
 #fridge {
 	font-size: 18px;
