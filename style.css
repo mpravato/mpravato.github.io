@@ -16,7 +16,7 @@ font-family: 'Roboto', serif;
 @media only screen and (min-width: 750px) {
 /*------ALL PAGES-----*/
 
-.header, .home, .about, .resume, .work, .footer {
+.header, .home, .resume, .work, .dance, .footer {
 	margin: 0 auto;
 	max-width: 90%;
 	}
@@ -98,7 +98,7 @@ font-family: 'Roboto', serif;
 	max-width: 100%;
 	}
 
-.home h2, h3 {
+.home h2, .home h3, .home h4 {
 	font-family: 'Lato', sans-serif;
 	color: #274057;
 	font-weight: normal;
@@ -120,11 +120,15 @@ font-family: 'Roboto', serif;
 	}
 
 .home h3 {
-	margin-top: 0px;
-	margin-bottom: 10px;
-	font-size: 25px;
 	text-align: center;
 	}
+
+.home h4 {
+	font-weight: normal;
+	font-size: 20px;
+	color: black;
+	}
+
 
 .home p {
 	font-family: 'Roboto', serif;
@@ -136,6 +140,8 @@ font-family: 'Roboto', serif;
 
 #thoughts {
 	font-size: 15px;
+	font-family: 'Roboto', serif;
+	font-weight: lighter;
 	}
 
 .home a, .rsocial a {
@@ -147,12 +153,6 @@ font-family: 'Roboto', serif;
 	font-weight: bold;
 	letter-spacing: 7px;
 	padding-left: 5px;
-	}
-
-#Gallery1 {
-	display: flex;
-	flex-direction: row;
-	flex-grow: 1;
 	}
 
 .hsocial, .rsocial {
@@ -197,11 +197,11 @@ font-family: 'Roboto', serif;
 	margin-bottom: 0px;
 	}
 
-.rsocial, #ref {
+.rsocial, #fridge {
 	text-align: center;
 	font-family: 'Roboto', serif;
 	font-size: 20px;
-	margin-top: 5px;
+	margin-top: 0px;
 	margin-bottom: 15px;
 	}
 
@@ -223,7 +223,7 @@ font-family: 'Roboto', serif;
 	margin-left: 15px;
 	}
 
-.resume h2, .work h3 {
+.resume h2, .work h3, .home h3 {
 	font-size: 30px;
 	background-color: #274057;
 	color: white;
@@ -322,7 +322,7 @@ font-family: 'Roboto', serif;
 
 
 
-/*------WORK-----*/
+/*------MULTIMEDIA-----*/
 
 .work {
 	max-width: 85%;
@@ -396,7 +396,23 @@ font-family: 'Roboto', serif;
 	}
 
 
-/*------Links Throughout Site------*/
+/*------DANCE------*/
+
+.dance h2 {
+	font-size: 30px;
+	background-color: #274057;
+	font-family: 'Roboto', serif;
+	color: white;
+	font-weight: normal;
+	letter-spacing: 2px;
+	margin-bottom: 1px;
+	margin-top: 10px;
+	padding-left: 8px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	}
+
+
 
 
 /*-------------------------------------Responsive Design for Phones-------------------------------------*/
