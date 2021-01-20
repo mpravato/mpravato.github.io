@@ -13,7 +13,7 @@ font-family: 'Roboto', serif;
 
 
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 600px) {
 /*------ALL PAGES-----*/
 
 .header, .home, .resume, .work, .dance, .footer {
