@@ -587,13 +587,12 @@ font-family: 'Roboto', serif;
 	max-height: 500px;
 	}
 
-.hsocial, .more a, .download a {
+.hsocial {
 	letter-spacing: 7px;
 	font-weight: lighter;
 	text-align: center;
 	margin-top: 20px;
 	}
-
 
 /*------RESUME------*/
 .rsocial, #business {
@@ -690,6 +689,12 @@ font-family: 'Roboto', serif;
 	align-self: center;
 	}
 
+.download a {
+	letter-spacing: 7px;
+	font-weight: lighter;
+	text-align: center;
+	margin-top: 20px;
+	}
 
 /*------WORK-----*/
 
@@ -721,6 +726,13 @@ font-family: 'Roboto', serif;
 .links p {
 	font-size: 16px;
 	margin-left: 10px;
+	}
+
+.more a {
+	letter-spacing: 7px;
+	font-weight: lighter;
+	text-align: center;
+	margin-top: 20px;
 	}
 
 
