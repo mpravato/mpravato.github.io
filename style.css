@@ -587,7 +587,7 @@ font-family: 'Roboto', serif;
 	max-height: 500px;
 	}
 
-.hsocial, .more, .download {
+.hsocial, .more a, .download a {
 	letter-spacing: 7px;
 	font-weight: lighter;
 	text-align: center;
