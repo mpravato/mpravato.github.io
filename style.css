@@ -587,7 +587,7 @@ font-family: 'Roboto', serif;
 	max-height: 500px;
 	}
 
-.hsocial {
+.hsocial, .more, .download {
 	letter-spacing: 7px;
 	font-weight: lighter;
 	text-align: center;
@@ -690,21 +690,6 @@ font-family: 'Roboto', serif;
 	align-self: center;
 	}
 
-.download a {
-	background-color: #274057;
-	color: white;
-	font-size: 30px;
-	font-family: 'Lato', sans-serif;
-	font-weight: normal;
-	text-decoration: none;
-	border-radius: 25px;
-	padding: 17px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-		}
-
-
 
 /*------WORK-----*/
 
@@ -738,20 +723,6 @@ font-family: 'Roboto', serif;
 	margin-left: 10px;
 	}
 
-	.more a {
-		color: white;
-		text-decoration: none;
-		font-style: normal;
-		background-color: #274057;
-		font-size: 30px;
-		font-family: 'Roboto', serif;
-		font-weight: normal;
-		border-radius: 25px;
-		padding: 17px;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		}
 
 /*------Links Throughout Site------*/
 .intro a, .hsocial a, .rsocial a, .links a {
